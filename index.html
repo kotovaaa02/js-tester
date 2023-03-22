@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>test</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+   <header class="header col-12 row px-3">
+        <div class="header__left col-md-6 d-flex">
+            <div class="header__left-logo">
+                <img src="img/logo.svg" alt="logo" width="80" class="d-inline-block img-fluid">
+            </div>
+            <div class="header__left-title my-auto" style="margin-left: -10px;">
+                JavaScript Test
+            </div>
+        </div>
+        <div class="header__right col-md-6 d-flex my-auto justify-content-end pe-3">
+            <div class="header__right-address">
+                Адрес: г. Челябинск, ул. Ворошилова, 12
+            </div>
+            <div class="header__right-telephone">
+                Телефон: +7 (351) 202-00-73
+            </div>
+        </div>
+   </header>
+
+   <main class="px-3 mt-2 h-100 pb-3">
+        <div id="carousel" class="carousel slide h-100" data-bs-ride="false">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active" data-question="1">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Что выведет этот скрипт?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task1.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        null
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        undefined
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        NaN
+                                    </div>
+                                    <div class="answer__variant" data-answer="4">
+                                        В коде ошибка
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="2">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Правда ли что a == b?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task2.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">    
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        Правда
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        Неправда
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        Как повезет
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="3">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Объявлена функция. Чем является F.prototype?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task3.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">    
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        Обычным объектом
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        Функцией
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        Равен undefined
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="4">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Что выведет этот код?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task4.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        undefined
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        function
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        null
+                                    </div>
+                                    <div class="answer__variant" data-answer="4">
+                                        object
+                                    </div>
+                                    <div class="answer__variant" data-answer="5">
+                                        В коде ошибка
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="5">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Что выведет этот код?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task5.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        10 раз число 10
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        10 раз число 0
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        Числа от 0 до 10
+                                    </div>
+                                    <div class="answer__variant" data-answer="4">
+                                        Числа от 0 до 9
+                                    </div>
+                                    <div class="answer__variant" data-answer="5">
+                                        В коде ошибка
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="6">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Что выведет этот код?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task6.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">  
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        2
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        3
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        4
+                                    </div>
+                                    <div class="answer__variant" data-answer="4">
+                                        12
+                                    </div>
+                                    <div class="answer__variant" data-answer="5">
+                                        В коде ошибка
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="7">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Существует ли такое значение X, что после присваивания a = X вызов alert(a == X) выдаст false?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task7.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">   
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        Да, X – это undefined
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        Да, X – это null
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        Да, другое
+                                    </div>
+                                    <div class="answer__variant" data-answer="4">
+                                        Нет, не бывает
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="8">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Что выведет alert?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task8.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        5
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        undefined
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        Будет ошибка
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="9">
+                    <div class="container-fluid h-100">                   
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Какой результат будет у выражения ниже?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task9.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        0
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        1
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        2
+                                    </div>
+                                    <div class="answer__variant" data-answer="4">
+                                        undefined
+                                    </div>
+                                    <div class="answer__variant" data-answer="5">
+                                        NaN
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="10">
+                    <div class="container-fluid h-100">                     
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Что выведет этот код?
+                                    </div>
+                                    <div class="question__image ms-3 mt-3">
+                                        <img src="img/task10.png" class="d-block img-fluid" width="450px" alt="task 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        number
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        undefined
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        function
+                                    </div>
+                                    <div class="answer__variant" data-answer="4">
+                                        ошибка
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-question="11" data-multi="1">
+                    <div class="container-fluid h-100">                     
+                        <div class="row h-100">
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="question h-100">
+                                    <div class="question__title ms-3 mt-3">
+                                        Что такое типы данных JavaScript? Выберите все правильные варианты.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 h-md-100 pb-2">
+                                <div class="answer ps-3 pt-3 h-100">
+                                    <div class="answer__variant" data-answer="1">
+                                        Digit
+                                    </div>
+                                    <div class="answer__variant" data-answer="2">
+                                        String
+                                    </div>
+                                    <div class="answer__variant" data-answer="3">
+                                        Boolean
+                                    </div>
+                                    <div class="answer__variant" data-answer="4">
+                                        Word
+                                    </div>
+                                    <div class="answer__variant" data-answer="5">
+                                        Number
+                                    </div>
+                                    <div class="answer__variant" data-answer="6">
+                                        Char
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center">Язык JavaScript</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Нажмите на кнопку ниже, чтобы начать тестирование.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn start" data-bs-dismiss="modal">Начать тестирование</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container-fluid d-flex mt-auto">
+        <button class="btn-prev hidden me-auto" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            Предыдущий
+        </button>
+        <button class="btn-next ms-auto" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            Следующий
+        </button>
+        <button class="btn-result hidden" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Результат
+        </button>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Результат</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="result-questions">
+                    </div>
+                    <div class="result-numbers text-center mt-3 mb-2">Результат: <span></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn again">Начать сначала</button>
+                    <button type="button" class="btn close" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <footer class="fixed-bottom mx-3 py-3 ps-3">
+        <div class="">П-38 Пономарев Юрий, Секисов Владислав, Костина Полина</div>
+   </footer>
+    
+</body>
+<script src="js/script.js"></script>
+</html>
